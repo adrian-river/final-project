@@ -1,0 +1,58 @@
+.about-me ul li{
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    list-style-type:none;
+  }
+  
+  .postsleft {
+    width: 300px;
+    float: left;
+  }
+  
+  
+  p.home {
+    margin-left:21px !important;
+    padding-right:24px !important;
+  }
+  
+  h3.post-title-home {
+    margin-left:21px !important;
+    padding-right:24px !important;
+  }
+  
+
+  .postsright {
+    width: 600px;
+    float: right; 
+    top: -100px;
+  }
+  .postsleft {
+    width: 620px;
+    float: right; 
+  }
+  
+  p.home {
+    margin-left:21px !important;
+    padding-right:24px !important;
+  }
+  
+  h3.post-title-home {
+    margin-left:21px !important;
+    padding-right:24px !important;
+  }
+
+  .boton {
+    border: 2px solid #DD110D; 
+    padding: 10px; 
+    background-color: #DD110D; 
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase; 
+    font-family: 'Roboto', sans-serif;
+    border-radius: 50px;
+    position: relative; 
+    top:-500px;
+    }
+  
+    
