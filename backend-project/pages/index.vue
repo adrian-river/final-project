@@ -1,5 +1,22 @@
 <template>
-  
+  <div>
+    <div v-for="cine in cines" :key="cine.id">
+      <p>
+        {{ cine.attributes.cine_name }}
+      </p>
+      <ul>
+        <li v-for="movie in cine.attributes.movies.data" :key="movie.id">
+          {{ movie.attributes.movie_name }}
+        </li>
+        <li v-for="movie in cine.attributes.movies.data" :key="movie.id">
+          {{ movie.attributes.sypnosis }}
+        </li>
+        <li v-for="movie in cine.attributes.movies.data" :key="movie.id">
+          {{ movie.attributes.image }}  
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -8,7 +25,7 @@ export default {
   name: 'App',
   data () {
     return {
-      cine: [],
+      cines: [],
       error: null,
       headers: {'Content-Type': 'application/json'}
     }
@@ -33,8 +50,8 @@ export default {
         headers: this.headers,
       }).then(this.checkStatus)
         .then(this.parseJSON);
-        this.cine = response
-        console.log(this.cine)
+        this.cines = response.data
+        console.log(this.cines.data)
     } catch (error) {
       this.error = error
     }
